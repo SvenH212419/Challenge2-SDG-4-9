@@ -15,4 +15,12 @@ public class MainMenu : MonoBehaviour
         Debug.Log("QUIT!");
         Application.Quit();
     }
+    public void LoadFile()
+    {
+        Debug.Log("Load");
+    }
+    public void DeleteFile()
+    {
+        Debug.Log("Delete");
+    }
 }
