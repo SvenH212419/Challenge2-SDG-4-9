@@ -5,5 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public int scene = 0;
+    public int scene;
+
+    public void SavePlayer()
+    {
+        SaveSystem.SavePlayer(this);
+    }
+
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+        scene = data.scene;
+    }
 }
