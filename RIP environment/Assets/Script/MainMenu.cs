@@ -17,7 +17,7 @@ public class MainMenu : MonoBehaviour
     }
     public void LoadFile()
     {
-        Debug.Log("Load");
+        SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
     }
     public void DeleteFile()
     {
