@@ -11,6 +11,6 @@ public void SaveGame()
     }
     public void LoadMenu()
     {
-        SceneManager.LoadScene("0");
+        SceneManager.LoadScene("Test");
     }
 }
